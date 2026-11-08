@@ -1,6 +1,6 @@
 package itamio.despawntweaks.mixin;
 
-import itamio.despawntweaks.DespawnTweaksMod;
+
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
@@ -38,7 +38,7 @@ public abstract class MobMixin extends LivingEntity {
         if (this.level().isClientSide()) {
             return;
         }
-        if (this.getTags().contains(DespawnTweaksMod.ID + ".shouldNotDespawn")
+        if (this.getTags().contains("despawntweaks.shouldNotDespawn")
                 || this.getTags().contains("despawntweaks.pickedItems")) {
             this.setNoActionTime(0);
             ci.cancel();
