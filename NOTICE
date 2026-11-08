@@ -1,0 +1,18 @@
+NOTICE
+
+Despawn Tweaks (Itamio port for Minecraft 26.3)
+
+This mod is an unofficial port of "Despawn Tweaks" by txnimc
+(https://github.com/txnimc/DespawnTweaks, LGPL-3.0-only, 3.9M
+downloads on Modrinth, max Minecraft 1.21.1).
+
+All credit for the original concept, design, and logic goes to
+txnimc. This port was created by Itamio to bring the mod to
+Minecraft 26.3 (Fabric) because the original has not been updated
+to this version.
+
+Itamio does not take credit for any of the original assets or logic.
+The code was updated to be compatible with Minecraft 26.3 (Fabric).
+Port changes: the structure/spawner tracking system and its config
+API dependency are not ported; the core despawn protection for
+mobs that picked up items is preserved.
