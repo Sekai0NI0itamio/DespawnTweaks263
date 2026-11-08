@@ -38,8 +38,8 @@ public abstract class MobMixin extends LivingEntity {
         if (this.level().isClientSide()) {
             return;
         }
-        if (this.getTags().contains(DespawnTweaksMod.ID + ".shouldNotDespawn")
-                || this.getTags().contains("despawntweaks.pickedItems")) {
+        if (this.entityTags().contains(DespawnTweaksMod.ID + ".shouldNotDespawn")
+                || this.entityTags().contains("despawntweaks.pickedItems")) {
             this.setNoActionTime(0);
             ci.cancel();
         }
