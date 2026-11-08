@@ -4,7 +4,10 @@
   "version": "${version}",
   "name": "Despawn Tweaks",
   "description": "Fixes cases where mobs that picked up items are prevented from despawning correctly. Unofficial port of Despawn Tweaks by txnimc (LGPL-3.0-only) for Minecraft 26.3 (Fabric). See NOTICE for credit.",
-  "authors": ["Itamio", "txnimc"],
+  "authors": [
+    "Itamio",
+    "txnimc"
+  ],
   "contact": {
     "homepage": "https://github.com/Sekai0NI0itamio/DespawnTweaks263",
     "sources": "https://github.com/txnimc/DespawnTweaks",
@@ -12,7 +15,18 @@
   },
   "license": "LGPL-3.0-only",
   "environment": "*",
-  "entrypoints": {"main": ["itamio.despawntweaks.DespawnTweaksMod"]},
-  "mixins": ["despawntweaks263.mixins.json"],
-  "depends": {"fabricloader": ">=0.20.1", "minecraft": "~26.3", "java": ">=25", "fabric-api": "*"}
+  "entrypoints": {
+    "main": [
+      "itamio.despawntweaks.DespawnTweaksMod"
+    ]
+  },
+  "mixins": [
+    "despawntweaks263.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": ">=1.21.1 <1.22",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
 }
